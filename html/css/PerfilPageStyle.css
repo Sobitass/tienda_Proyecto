@@ -1,0 +1,58 @@
+body  {
+  background: url("../images/background.jpg")!important;
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  font-family: Montserrat, sans-serif;
+  
+}
+
+
+
+.btnEditar {
+  margin-top: 6px;
+  width: 399.1406px;
+  background: url("/images/banner-bg.png");
+  
+  background-size: cover;
+  border-width: 0px;
+  border-radius: 15px;
+}
+
+.btnEditar:hover {
+  box-shadow: 0px 0px 8px 1px;
+}
+
+.cuerpoDi {
+  height: 570px;
+  background: var(--bs-body-color);
+  background-color: rgb(255, 80, 80);
+  border-radius: 35px;
+  box-shadow: 0px 0px 8px 6px var(--bs-light);
+  text-align: center;
+}
+
+#label_title {
+  color: var(--bs-light);
+}
+
+#dataInfo {
+  margin-bottom: 8px;
+}
+
+#email, #username {
+  width: 296px;
+  height: 32px;
+  border-radius: 18px;
+  border-width: 0px;
+  margin-left: 13px;
+}
+
+html {
+  height: 100%;
+}
+
+.user_IMAGE {
+  margin-top: 24px;
+  margin-bottom: 5px;
+}
+

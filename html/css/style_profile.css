@@ -1,0 +1,317 @@
+/* Reset default margin and padding for elements */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #ddd;
+  }
+  
+  /* Body styles */
+  body {
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #e93131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    max-width: 1800px;
+    background-color: #ffffff00;
+    border-radius: 5%;
+    
+  }
+  
+  /* Form label styles */
+  label {
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    background-color: #ee7f00;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #171e31;
+    padding: 20px;
+    text-align: center;
+    width: min-content;
+    
+  }
+  
+  /* Navigation menu styles */
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #8e9092;
+  }
+  
+  /* Section styles */
+  .section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .glass-section {
+    background-color: rgba(255, 255, 255, 0.973);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(252, 252, 252, 0.925);
+    backdrop-filter: blur(10px);
+    padding: 80px;
+    background-position: center top;
+    background-size: cover;
+  }
+  
+  .glass-section2 {
+    background-color: rgba(15, 14, 14, 0.705);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(252, 252, 252, 0.925);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    background-position: center top;
+    background-size: cover;
+  }
+  
+  
+  .glass-container {
+    background-color: rgba(168, 172, 114, 0.705);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 85, 0.925);
+    backdrop-filter: blur(10px);
+    padding: 200px;
+    background-position: center top;
+    background-size: cover;
+  }
+  
+  
+  /* Heading styles */
+  h1, h2, h3 {
+    color: #6552bb;
+  }
+  
+  /* Text content styles */
+  p {
+    line-height: 1.5;
+  }
+  
+  /* Call-to-action button styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #52bb81;
+    color: #6f7ec0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #fbff00;
+  }
+  
+  /* Decorative section styles */
+  .decorative-section {
+    background-color: #6f7ec0;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #6f7ec0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+  }
+  
+  .image img {
+    max-width: 20%; /* Ensure images don't exceed their container's width */
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the image */
+  }
+  
+  .image_avatar img {
+    max-width: 5%; /* Ensure images don't exceed their container's width */
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur 10px;
+  }
+  
+  .text {
+    flex: 1; /* Allow text to take remaining space */
+    padding: 20px; /* Add some space around text */
+    text-align: left; /* Align text to the left */
+    color: #333; /* Set text color */
+  }
+  
+  .text2 {
+    flex: 1; /* Allow text to take remaining space */
+    padding: 20px; /* Add some space around text */
+    text-align: left; /* Align text to the left */
+    color: #ffffff; /* Set text color */
+    background-color: #9b9b9b;
+    border-radius: 15px;
+    border-color: #ddd;
+    box-shadow: #000000;
+    backdrop-filter: blur 10px;
+    
+  }
+  
+  .content {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .section {
+    height: auto; /* Adjust the height of sections as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  
+  /* Profile container styles */
+  .profile {
+    position: relative; /* Enable relative positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  
+  /* Avatar styles */
+  .avatar {
+    max-width: 5px;
+    max-height: 100px;
+    border-radius: 50%;
+  }
+  
+  /* Username styles */
+  .show_username {
+    margin-top: 10px;
+    position: relative; /* Enable absolute positioning */
+    top: 10px; /* Adjust top position as needed */
+    right: 80px; /* Adjust right position as needed */
+    width: 5px;
+    height: 50px;
+    flex: 1; /* Allow text to take remaining space */
+    padding: 20px; /* Add some space around text */
+    text-align: left; /* Align text to the left */
+    color: #f7f3f3; /* Set text color */
+  
+    
+    
+  }
+  
+  /* Profile icon styles */
+  .profile-icon {
+    position: absolute; /* Enable absolute positioning */
+    top: 10px; /* Adjust top position as needed */
+    right: 80px; /* Adjust right position as needed */
+    width: 5px;
+    height: 50px;
+    scale: .08;
+    cursor: pointer;
+    
+    
+  }
+  
+  
+  .image-gallery {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .image-gallery img {
+    width: 35%;
+    transition: transform 1.2s ease-in-out;
+    
+  }
+  
+  #prevBtn,
+  #nextBtn {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  #prevBtn {
+    margin-right: 10px;
+  }
+  
+  #nextBtn:hover,
+  #prevBtn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .columns-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  

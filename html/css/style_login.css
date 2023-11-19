@@ -1,0 +1,198 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Set a creative background image */
+  body {
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #ff0000;
+    background: blur(10px); /* Apply a blur effect to the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    margin: 0;
+    
+  }
+  
+  .radio-group {
+    display: inline-block;
+    margin-right: 20px; /* Agrega espacio entre los grupos */
+  }
+  
+  
+  label {
+    color: #fff; /* Text color for labels */
+    margin: 10px 0;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(58, 58, 58, 0.966);
+    background: rgba(255, 255, 255, 0.651); /* Adjust the opacity as needed */
+  }
+  
+  button {
+  padding: 10px 20px;
+  background-color: #ff3b3b; /* Background color for the button */
+  border: none;
+  border-radius: 5px;
+  color: #ffffff; /* Text color for the button */
+  cursor: pointer;
+  }
+  
+  button:hover {
+  background-color: #265a92; /* Change the button color on hover */
+  }
+  /* Create a header style */
+  header {
+    background-color: #002ba1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1:hover,  h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+  
+  }
+  
+  
+  
+  .glass-container {
+    background: rgba(255, 255, 255, 0.705); /* Adjust the opacity as needed */
+    border-radius: 10px;
+  
+    backdrop-filter: blur(35px); 
+  
+  
+    
+    
+    
+    padding: 20px;
+    /* Apply a blur effect to the background */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.966); /* Add a subtle shadow */
+  }
+  
+  
+  .glass-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 720px;
+  
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #585252;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #8e9092;
+  }
+  
+  /* Style the main content area */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(81, 86, 116, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style headings */
+  h1, h2, h3 {
+    color: #6552bb;
+  }
+  
+  /* Style text content */
+  p {
+    line-height: 1.5;
+  }
+  
+  /* Create a call-to-action button */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #52bb81;
+    color: #6f7ec0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #fbff00;
+  }
+  
+  /* Style a decorative section */
+  .decorative-section {
+    background-color: #6f7ec0;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Add a subtle animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply animation to elements */
+  .animated {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Create a footer style */
+  footer {
+    background-color: #333;
+    color: #6f7ec0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  .image img {
+    max-width: 80%; /* Ensure images don't exceed their container's width */
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the image */
+  }
