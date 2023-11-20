@@ -1,14 +1,14 @@
 $(document).ready(function () {
-    $('#FormCategoria').submit(function (event) {
+    $('#FormEdit').submit(function (event) {
         event.preventDefault(); 
-        alert("Envío de formulario awebo categoria");
+        alert("Envío de formulario awebo");
         
         var formData = new FormData(this);
         $.ajax({
             data:  formData,
             type: "POST",
             dataType: "json",
-            url: "php/registro_categoria.php",
+            url: "php/editar_usuario.php",
             cache: false,
             contentType: false,
             processData: false

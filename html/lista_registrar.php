@@ -115,9 +115,9 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 -->
 
     </div>
-    <script src="js/validar_categoria_campos_1.js"></script>
-    <script src="js/validar_categoria_registro_1.js"></script>
+    <script src="js/validar_lista_campos.js"></script>
+    <script src="js/validar_lista_registro.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/query_insert_cat_1.js"></script>
+    <script src="js/query_insert_lista.js"></script>
 </body>
 </html>

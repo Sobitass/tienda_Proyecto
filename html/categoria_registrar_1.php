@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrate v3</title>
     <link rel="stylesheet"  href="css/estilos.css">
+    <link rel="stylesheet"   href="css/style.css">
     <script src="js/sweetalert2.all.min.js"></script>
     <script src="js//jquery-3.6.0.min.js"></script>
     
@@ -27,15 +28,15 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 
         <div class="ctn-form">
             <img src="assets/img/logo2.png" alt="" id="Foto "class="logo">
-            <h1 class="title">Registrar nuevo wishlist</h1>
+            <h1 class="title">Registrar nueva categoria</h1>
 
-            <form action="" id = "FormWishlist" name="FormWishlist"  method="post" onsubmit="">
+            <form action="" id = "FormCategoria1" name="FormCategoria1"  method="post" onsubmit="">
                 
-                <label for="">Nombre del producto</label>
-                <input type="text" name="Nombre_Lista" id="Nombre_Lista" vali="Nombre_Lista">
+                <label for="">Nombre de la categoria</label>
+                <input type="text" name="Nombre_Categoria" id="Nombre_Categoria" vali="Nombre_Categoria">
                
-                <label for="">Detalle del producto</label>
-                <input type="text" name="Descripcion_Lista" id="Descripcion_Lista" vali="Descripcion_Lista">
+                <label for="">Detalle de la categoria</label>
+                <input type="text" name="Descripcion_Categoria" id="Descripcion_Categoria" vali="Descripcion_Categoria">
 
                 </select>
                 <br>
@@ -48,8 +49,8 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 
             </form>
 
-            <span class="text-footer">¿No vas a registrar una lista?
-                <a id = "btn-regresar" href="wishlist.php">Regresar</a>
+            <span class="text-footer">¿No vas a registrar una categoria?
+                <a id = "btn-regresar" href="categoria.php">Regresar</a>
             </span>
         </div>
 

@@ -1,6 +1,6 @@
 function validarRegistro() {
     const CategoriaNombreInput = document.getElementById("Nombre_Categoria");
-    const CategoriaDescripcionInput = document.getElementById("Detalle_Categoria");
+    const CategoriaDescripcionInput = document.getElementById("Descripcion_Categoria");
     alert("Aqui entra");
 
     let errorMessage = "";
@@ -9,13 +9,22 @@ function validarRegistro() {
     if (CategoriaNombreInput.value === "") {
         errorMessage += "Nombre de categoria es obligatorio.\n";
     }
-    if (CategoriaDescripcionInput.value === "") {
+
+
+
+if (CategoriaDescripcionInput.value === "") {
         errorMessage += "Dar detalles es obligatorio.\n";
-    } 
-    else {
+}   
+    
+    
+    
+    
+    
+    else { 
         // Validar el username y la contraseña aquí si es necesario
-        alert("¡Registro exitoso!")
-        window.location="gallery_Vendedor.php";
+       
+
+        //      window.location="gallery_Vendedor.php";
     }
 
    
@@ -23,9 +32,11 @@ function validarRegistro() {
 
 // Función para el botón "Regresar" (sin condiciones)
 function regresar() {
+    window.location = "categoria.php";
+    alert("Regresamos");
     // Puedes poner aquí cualquier lógica que desees para el botón "Regresar"
     // Por ejemplo, redirigir al usuario a otra página
-    window.location = "categoria.php";
+    
 }
 
 // Asigna las funciones a los botones

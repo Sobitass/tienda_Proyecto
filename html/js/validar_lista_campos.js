@@ -2,11 +2,10 @@ $(document).ready(function(){
 
     const expresiones = {
         
-        Nombre_Categoria: /^[a-zA-Z\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-        Descripcion_Categoria: /^[a-zA-Z\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+        Nombre_Lista: /^[a-zA-Z\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+        Descripcion_Lista: /^[a-zA-Z\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
         
-       
-    };
+        };
 
     function ValidarVacios(txt){
         if(txt.length == 0) return true;
@@ -41,7 +40,7 @@ $(document).ready(function(){
 
   $(".btn-inicio").click(function(){
 
-        var a = $("[vali=Nombre_Categoria]").val();
+        var a = $("[vali=nomProd]").val();
 
         if(ValidarVacios($("[vali=Nombre_Categoria]").val())) {
             MostrarMsgBox('Espacios vacios', 'Revisa la informacion', 'error');
@@ -54,15 +53,11 @@ $(document).ready(function(){
         }
 
         
+        var isNomCatValid= expresiones.usuario.test($("[vali=nomProd]").val());
+        var isDetProdValid= expresiones.nombre.test($("[vali=detProd]").val());
+      
 
-        
-        
-        var Nombre_Categoria= expresiones.Nombre_Categoria.test($("[vali=Nombre_Categoria]").val());
-      //  var Detalle_Categoria= expresiones.Detalle_Categoria.test($("[vali=detCategoria]").val());
-
-       
-
-        if(!Nombre_Categoria) {
+        if(!isNomCatValid) {
             MostrarMsgBox('Nombre de producto Invalido', 'No se permiten caracteres especiales mas que el guion y guion bajo', 'error');
             return false;
         }

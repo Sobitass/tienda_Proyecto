@@ -1,3 +1,8 @@
+<?php
+
+
+
+?>
 
 
 
@@ -27,54 +32,75 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 
         <div class="ctn-form">
             <img src="assets/img/logo2.png" alt="" id="Foto "class="logo">
-            <h1 class="title">Registrar nuevo wishlist</h1>
+            <h1 class="title">Registrarse</h1>
 
-            <form action="" id = "FormWishlist" name="FormWishlist"  method="post" onsubmit="">
-                
-                <label for="">Nombre del producto</label>
-                <input type="text" name="Nombre_Lista" id="Nombre_Lista" vali="Nombre_Lista">
+            <form action="" id = "FormEdit" name="FormEdit"  method="post">
+
+                <label for="">Nombre(s)</label>
+                <input type="text" name="name" id="name" vali="nom">
                
-                <label for="">Detalle del producto</label>
-                <input type="text" name="Descripcion_Lista" id="Descripcion_Lista" vali="Descripcion_Lista">
+                <label for="">Apellidos</label>
+                <input type="text" name="apellido" id="apellido" vali="apes">
+
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="sexo" required>
+                    <option value="hom">Hombre</option>
+                    <option value="muj">Mujer</option>
+                    <option value="ot">Otros</option>
 
                 </select>
                 <br>
 
-                <form onsubmit="return validateForm()">
-                <input type="submit" class="btn-registro" id="btn-registro" value="Registrar Lista">
-                </form>
-                      <!-- Cambia el tipo de botón a "button" y agrega un id -->
-                <!--   <button type="button" class="text-description" id="btn-registro">Guardar</button>   -->
+                <label for="rol">Tipo de Cuenta</label>
+                <select name="rol" id="rol" required>
+                    <option value="vend">Vendedor</option>
+                    <option value="comp">Comprador</option>
+                </select>
+                <br>
+
+                <label for="">Fecha de Nacimiento</label>
+                <input type="date" name="birth" id="birth" min='1900-01-01' max = '2023-12-01' value='2001-01-01' vali="Fnac">
+                <label for="">Email</label>
+                <input type="email" name="mail" id="mail" vali="email">
+
+                <label for="">Nombre de Usuario</label>
+                <input type="text" name="username" id="username" vali="usu">
+
+                <label for="">Contraseña</label>
+                <input type="password" name="password" id="password" vali="contra">
+                <label for="">Confirmar contraseña</label>
+                <input type="password" name="password2" id="password2" vali="contraConfi">
+
+               
+
+                <input type="submit" class="btn-registro" value="Editar informacion">
 
             </form>
 
-            <span class="text-footer">¿No vas a registrar una lista?
-                <a id = "btn-regresar" href="wishlist.php">Regresar</a>
+            <span class="text-footer">¿No vas a editar datos?
+                <a href="index.php">Regresar</a>
             </span>
         </div>
 
         <div class="ctn-text2">
     <div class="capa"></div>
-    <label for="producto-image" class="title-description">
-        <img id="producto-image-preview" src="ruta_por_defecto_imagen" alt="Perfil">
+    <label for="profile-image" class="title-description">
+        <img id="profile-image-preview" src="ruta_por_defecto_imagen" alt="Perfil">
         <br>
         <br>
-        <h1>Selecciona una imagen</h1>
-        <h1>del producto</h1>
+        Selecciona una imagen de perfil
         <br>
         <br>
     
-        <input type="file" id="producto-image" name="producto" accept="image/*" onchange="previewproductoImage(event)">
+        <input type="file" id="profile-image" name="profileImage" accept="image/*" onchange="previewProfileImage(event)">
         <br>
     </label>
     <br>
     <form onsubmit="return validateForm()">
-   <!-- Cambia el tipo de botón a "button" y agrega un id -->
-    <button type="submit" class="text-description" id="btn-registro">Guardar</button>
-
+        <button type="submit" class="text-description">Guardar</button>
     </form>
 </div>
-<!--
+
 <script>
     function previewProfileImage(event) {
         const input = event.target;
@@ -107,17 +133,13 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
         alert('Imagen cargada y formulario enviado correctamente.');
         return true;
     }
-
-
 </script>
-
-
--->
+    
 
     </div>
-    <script src="js/validar_categoria_campos_1.js"></script>
-    <script src="js/validar_categoria_registro_1.js"></script>
+    <script src="js/Validar_Edit_User_Campos.js"></script>
+    <script src="js/Validar_Edit_Datos.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/query_insert_cat_1.js"></script>
+    <script src="js/query_edit_usu.js"></script>
 </body>
 </html>

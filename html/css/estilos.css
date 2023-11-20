@@ -12,10 +12,7 @@
     text-decoration: none;
 }
 
-body {
-    background-image: url('/images/background.jpg');
-    padding: 20px;
-}
+
 
 .container-all {
     width: 100%;
@@ -303,9 +300,9 @@ body {
     font-size: .8125rem;
     font-weight: 400;
     line-height: 1.5385;
-    color: #333;
+    color: #ca5b5b;
     text-align: left;
-    background-color: #f5f5f5;
+    background-color: #db5d5d;
 }
 
 .mt-50{
@@ -332,7 +329,11 @@ a{
 /* PRUEBA MENU */
 
 body {
-    background-color: #FFCDD2;
+    background-color: #a3343f;
+}
+
+body-registro-prod {
+    background-color: #a3343f;
 }
 
 .bg-black {
